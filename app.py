@@ -101,7 +101,7 @@ def server(input, output, session):
 
     @reactive.calc
     def tips_data():
-        return tips.loc[adaptive_filters_idx()]
+        return tips_original().loc[adaptive_filters_idx()]
 
     @render.ui
     def total_tippers():

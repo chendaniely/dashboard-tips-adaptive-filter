@@ -6,7 +6,7 @@ from shared import app_dir, tips
 from shiny import App, reactive, render, ui
 from shinywidgets import output_widget, render_plotly
 
-from pyshiny_adaptive_filter import adaptive_filter_module, adaptive_filter
+from shiny_adaptive_filter import adaptive_filter_module, adaptive_filter
 
 bill_rng = (min(tips.total_bill), max(tips.total_bill))
 
